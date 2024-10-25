@@ -17,6 +17,8 @@ const orders = [
         <td>${order.id}</td>
         <td>${order.customer}</td>
         <td>${order.status}</td>
+        <td>${order.amount}</td>
+        <td>${order.items}</td>
         <td><button onclick="viewOrder(${order.id})">View</button></td>
       `;
   
@@ -34,6 +36,7 @@ const orders = [
       <p><strong>Customer:</strong> ${order.customer}</p>
       <p><strong>Status:</strong> ${order.status}</p>
       <p><strong>Items:</strong> ${order.items.join(", ")}</p>
+      <p><strong>Items:</strong> ${order.amount}</p>
       <button onclick="updateStatus(${order.id})">Update Status</button>
     `;
   }
